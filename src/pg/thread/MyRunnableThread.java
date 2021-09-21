@@ -25,7 +25,7 @@ public class MyRunnableThread implements Runnable {
 	public static void main(String[] args) {
 		System.out.println("Starting Main Thread...");
 		MyRunnableThread mrt = new MyRunnableThread();
-		Thread t = new Thread( mrt);
+		Thread t = new Thread(mrt);
 		t.start();
 		while (MyRunnableThread.myCount <= 10) {
 			try {
@@ -38,6 +38,9 @@ public class MyRunnableThread implements Runnable {
 		System.out.println("End of Main Thread...");
 	}
 
+	public static void print() {
+		System.out.println("Hello Usre");
+	}
 	
 
 }
